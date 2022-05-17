@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+
+/* ============================== Global ============================== */
+
+
+
+
+/* ============================== section 2 VB ============================== */
+#sec2{
+    display: flex;
+    justify-content: space-between;
+}
+#right{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+#left{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#leftP{
+    color: white;
+    background-color: #222222;
+    max-width: 100%;
+}
+#leftP p{
+    max-width: 30%;
+}
+
+#rightP{
+    background-color: #f3f3f3;
+}
+
+
+#leftImg{
+    width: 450px;
+    height: 250px;
+    background: url(/assets/img/leftimg.png);
+    background-position: center;
+    background-size: cover;
+}
+#rightImg{
+    width: 450px;
+    height: 250px;
+    background: url(/assets/img/rightimg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* ============================== section 3 VB ============================== */
+
+
+
+
+
+/* ============================== footer VB ============================== */
