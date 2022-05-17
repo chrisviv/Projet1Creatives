@@ -6,31 +6,84 @@
 }
 @font-face {    
     font-family: "GothamBold";
-    src: url("../font/GathamBold.ttf");
+    src: url("../font/GothamBold.ttf");
 }
 @font-face {    
     font-family: "GothamBook";
-    src: url("../font/GathamBook.ttf");
+    src: url("../font/GothamBook.ttf");
 }
 @font-face {    
     font-family: "GothamMedium";
-    src: url("../font/GathamMedium.ttf");
+    src: url("../font/GothamMedium.ttf");
 }
 @font-face {    
-    font-family: "MyriadPro-Regular.OTF";
+    font-family: "MyriadPro-Regular";
     src: url("../font/MYRIADPRO-REGULAR.OTF");
 }
 *{
     margin: 0;
     padding: 0;
-}
-body{
     box-sizing: border-box;
 }
 #boxNav{
+    background-image: url(../img/header.png);
     width: 100%;
-    min-height: 100vh;
-    background-image: url();
-
+    min-width: 100vh;
 }
-
+#boxNav > nav{
+    height: 50px;
+  
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav > ul > li{
+    list-style-type: none;
+    color: white;
+    margin: 0 px 20px;
+}
+nav > ul > li > a {
+    text-decoration:  none;
+    color: white;
+    padding: 0px 20px;
+    font-family: "MyriadPro-Regular";
+}
+.boxReseau{
+    display: flex;
+}
+.boxReseau > a{
+    font-size: 20px;
+    padding: 0px 10px;
+}
+header{
+       min-height: 100vh;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+}
+header>h1{
+    font-size:9.563em;
+    color: #ffff;
+    font-family: "GothamBold";
+}
+header>p{
+    font-size:0.813em;
+    font-family: "Open Sans";
+}
+#mobileNavArea{
+    display: none;
+}
+#burger{
+    display: none;
+}
+#closeNav{
+    display: none;
+}

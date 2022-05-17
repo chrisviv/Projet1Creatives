@@ -1,0 +1,27 @@
+Font-Famille
+
+
+
+Nav            ? MyriadPro-Reg
+
+CREATiVE/footer       ? ROBOTO/BOLD
+
+ Scroll Down   ? OPEN Sans- Regular
+
+
+Titre H1 	? Gotham/Bold	
+
+		
+ Sous-titre   ? Gotham/Medium
+
+
+
+ paragraphe   ? Gotham/Book
+
+
+
+
+font-family: 'Roboto', sans-serif; 
+
+
+
