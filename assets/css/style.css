@@ -13,50 +13,60 @@ body{
 
 /* ============================== section 2 VB ============================== */
 #sec2{
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
-#right{
-    max-width: 50%;
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
-}
-#left{
-    max-width: 50%;
+/* ============================== Left ============================== */
+#sec2>.left{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
-#leftP{
+.left>.leftP{
     color: white;
     background-color: #222222;
+    padding-top: 7.4%;
+    padding-bottom: 7.4%;
+}
+.left>.leftP p ,h3{
+    margin: 2rem;
+    max-width: 50%;
+    text-align: left;
+    max-height: 50%;
+    margin-left: 10rem;
+}
+.left>.eftImg{
+    height: 28.125rem;
+    background: url(../img/leftimg.png);
+    background-position: center;
+    background-size: cover;
+}
+/* ============================== Right============================== */
+#sec2>.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.right>.rightP{
     max-width: 100%;
-}
-#leftP p{
-    max-width: 30%;
-}
-
-#rightP{
+    padding-top: 7.4%;
+    padding-bottom: 7.4%;
     background-color: #f3f3f3;
 }
-
-
-#leftImg{
-    width: 450px;
-    height: 250px;
-    background: url(/assets/img/leftimg.png);
+.right>.rightP p ,h3{
+    margin: 2rem;
+    max-width: 50%;
+    text-align: left;
+    max-height: 50%;
+    margin-left: 10rem;
+}
+.right>.rightImg{
+    height: 28.125rem;
+    background: url(../img/rightimg.png);
     background-position: center;
     background-size: cover;
 }
-#rightImg{
-    width: 450px;
-    height: 250px;
-    background: url(/assets/img/rightimg.png);
-    background-position: center;
-    background-size: cover;
-}
-
 
 /* ============================== section 3 VB ============================== */
 
