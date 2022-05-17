@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../font/OpenSans-Regular.ttf");
+}
+@font-face {    
+    font-family: "GothamBold";
+    src: url("../font/GathamBold.ttf");
+}
+@font-face {    
+    font-family: "GothamBook";
+    src: url("../font/GathamBook.ttf");
+}
+@font-face {    
+    font-family: "GothamMedium";
+    src: url("../font/GathamMedium.ttf");
+}
+@font-face {    
+    font-family: "MyriadPro-Regular.OTF";
+    src: url("../font/MYRIADPRO-REGULAR.OTF");
+}
