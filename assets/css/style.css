@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,19 +6,13 @@
 body{
     box-sizing: border-box;
 }
-
-/* ============================== Global ============================== */
-
-
-
-
 /* ============================== section 2 VB ============================== */
 #sec2{
     min-height: 100vh;
     display: flex;
     width: 100%;
 }
-/* ============================== Left ============================== */
+/* =========================== Left =========================== */
 #sec2>.left{
     width: 50%;
     display: flex;
@@ -36,13 +31,13 @@ body{
     max-height: 50%;
     margin-left: 10rem;
 }
-.left>.eftImg{
+.left>.leftImg{
     height: 28.125rem;
     background: url(../img/leftimg.png);
     background-position: center;
     background-size: cover;
 }
-/* ============================== Right============================== */
+/* =========================== Right=========================== */
 #sec2>.right{
     width: 50%;
     display: flex;
@@ -67,9 +62,50 @@ body{
     background-position: center;
     background-size: cover;
 }
-
 /* ============================== section 3 VB ============================== */
-
+#sec3{
+    min-height: 100vh;
+    width: 100%;
+}
+/* =========================== Line top =========================== */
+.lineTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lineTop>.B{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15.438rem;
+    margin: 2rem;
+    color: #d21242;
+    overflow: visible;
+}
+.lineTop>.lets{
+    font-size: 2.375rem;
+    text-align: center;
+}
+.lineTop>h2{
+    font-size: 1.875rem;
+    text-align: center;
+}
+/* =========================== Line Bottom =========================== */
+#sec3>.lineBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 7em;
+    margin-right: 7em;
+}
+#sec3>.lineBottom h3{
+    color: #d21242;
+    text-align: inherit;
+    font-size: 1.125rem;
+}
+#sec3>.lineBottom p{
+    color: #222222;
+    font-size: 0.938rem;
+    text-align: center;
+}
 
 
 
