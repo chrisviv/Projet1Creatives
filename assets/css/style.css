@@ -21,17 +21,17 @@
     src: url("../font/MYRIADPRO-REGULAR.OTF");
 }
 /*------------------------------Global chris/pc-----------------------------------------*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     width: 100%;
     height: 100%;
 }
 /*------------------------------Section Navigation chris/pc-------------------------*/
-#boxNav{
+#boxNav {
     background: url(../img/header.png) center top/cover;
     width: 100%;
     min-width: 100vh;
@@ -49,7 +49,7 @@ body{
     border-bottom: 3px solid rgba(255, 255, 255, 0.37);
 }
 /* ----------Partie Logo ACS--chris/pc-------------*/
-#boxNav > nav >.boxLogo {
+#boxNav > nav > .boxLogo {
     width: 20%;
     display:  flex;
     align-items: center;
@@ -84,13 +84,13 @@ body{
     user-select: none;
 }
 /*--------------Parite Navigation chris/pc-----------------*/
-#boxNav > nav > ul{
+#boxNav > nav > ul {
     width: 60%;
     height: 100%;
     display: flex;
     justify-content: space-around;
 }  
-#boxNav > nav > ul > li{
+#boxNav > nav > ul > li {
     list-style-type: none;
     height: 100%;
     width: 10%;
@@ -109,34 +109,91 @@ body{
     border-bottom: 3px solid #d21242;
 }
 /*---------------------------Partie Nav Réseau sociaux chris/pc---------------------------*/
-#boxNav > nav >.boxReseau{
+#boxNav > nav >.boxReseau {
     width: 20%;
     display: flex;
     align-items: flex-start;
 }
-#boxNav > nav >.boxReseau > a{
+#boxNav > nav >.boxReseau > a {
     font-size: 20px;
     padding: 0px 20px;
     color: #ffff;
     text-decoration: none;
 }
-#boxNav > nav >.boxReseau > a:hover{
+#boxNav > nav >.boxReseau > a:hover {
+    color: #d21242;
+}
+/*--------------------Partie Navigation burger chris/pc-----*/
+.none{
+    display: none !important;
+}
+.fa-bars{
+    display: none;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.fa-xmark{
+    margin-right: 10px;
+    cursor: pointer;
+    color: #ffffff;
+}
+#mobileNavArea{
+    overflow: hidden;
+    width: 100%;
+    height: 0px;
+    background-color : rgba(255,255,255,0.21);
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.2s ease 0s;
+}
+.openNav{
+    height: 300px !important;
+}
+#mobileNavArea > ul > li {
+    list-style-type: none;
+    margin: 15px 0px;
+}
+#mobileNavArea > ul > li > a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: 500;
+    margin: 0px 80px;
+    font-family: "MyriadPro-Regular";
+}
+#mobileNavArea > ul > li > a:hover{
+    color: #d21242;
+}
+.mobileReseau {
+ width: 100%;
+ display: flex;
+ justify-content: flex-end;
+ padding: 0px 50px;
+}
+.fa-brands{
+    margin: 0px 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.fa-brands:hover{
     color: #d21242;
 }
 /*---------------------------------section Header chris/pc-------------------------*/
-header{
+header {
        min-height: 100vh;
        display: flex;
        align-items: center;
        justify-content: center;
        flex-direction: column;
 }
-header > h1{
+header > h1 {
     font-size:9.563em;
     color: #f5f5f5;
     font-family: "GothamBook";
 }
-header > p{
+header > p {
     font-size:0.813em;
     font-family: "Open Sans";
     color: #ffff;
@@ -153,26 +210,16 @@ header > .roundH {
     align-items: center;
     justify-content: center;
 }
-header > div > a > .fa-chevron-down{
+header > div > a > .fa-chevron-down {
     color: #ffffff;
     font-size: 30px;
 }
-header > div > a > i:hover{
-    color: #d21242;
+header > div > a > i:hover {
+    color: #d21242; 
     transform: rotate(180deg);
 }
-/*----------------------------section Nav burger/none-------chris/pc---------------*/
-#mobileNavArea{
-    display: none;
-}
-#burger{
-    display: none;
-}
-#closeNav{
-    display: none;
-}
 /*----------------------------------section 1 chris/pc-----------------------------*/
-#section1{
+#section1 {
     width: 100%;
     min-height: 100vh;
     background: #d21242;
@@ -181,13 +228,13 @@ header > div > a > i:hover{
     justify-content: center;
     flex-direction: column;
 }
-#section1 > .boxTitle{
+#section1 > .boxTitle {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-#section1 > .boxTitle > h2{
+#section1 > .boxTitle > h2 {
     font-size: 2.375em;
     color: #ffffff;
     font-family:"GothamBook";
@@ -196,7 +243,7 @@ header > div > a > i:hover{
     margin-top: 105px;
     z-index: 2;
 }
-#section1 > .boxTitle > .w{
+#section1 > .boxTitle > .w {
     font-size: 15.348em;
     color: #da3d64;
     font-family: "Roboto";
@@ -205,7 +252,7 @@ header > div > a > i:hover{
     user-select: none;
 }
 /*----------------------------section partie activity  chris/pc--------------------*/
-#activity{
+#section1 > #activity {
     width: 100%;
     height: 50%;
     display: flex;
@@ -213,31 +260,77 @@ header > div > a > i:hover{
     justify-content: center;
     flex-direction: row;
 }
-#activity > .write{
+#section1 > #activity > .write {
     width: 100%;
     color: #ffffff;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-#activity > .write > img{
+#section1 > #activity > .write > img {
     padding: 50px 0px;
     width: 2.125em;
 }
-#activity > .write > a{
+#section1 > #activity > .write > a {
     color: #ffffff; 
     padding: 50px 0px;
 }
-#activity > .write > h3{
+#section1 > #activity > .write > h3 {
     font-size: 1.125em;
     font-family: "GothamBook";
     padding: 20px 0px;
 }
-#activity > .write > p{
+#section1 > #activity > .write > p {
     width: 52%;
     font-size: 0.938em;
     line-height: 1.3em;
     padding: 20px 0px;
     text-align: justify;
 }
+/* ------------------------------------------responsive chris/tablette min-width 768px------------------------------------------------*/
+@media screen and (min-width: 768px) {
+/* ----------------------Partie Logo ACS--chris/tablette-768px-------------------------------------*/
+#boxNav > nav {
+    justify-content: flex-start;
+    align-items: center;
+}
+#boxNav > nav > .boxLogo > .carre {
+    width: 50px;
+    height: 50px;
+}
+#boxNav > nav > .boxLogo > .carre.rose > p {
+    font-size: 1.1em;
+}
+/*-------------------Parite Navigation chris/tablette-768px------------------------------------------*/
+#boxNav > nav > ul {
+    display: none;
+} 
+/*---------------------------Partie Nav Réseau sociaux chris/tablette-768px---------------------------*/
+#boxNav > nav >.boxReseau {
+   display: none;
+}
+/*---------------------------------section Header chris/tablette-768px-------------------------*/
+header > h1 {
+    font-size:5.5em;
+}
+
+}
+@media screen and (max-width: 1050px) {
+    #boxNav > nav > .boxBurger{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 30px;
+}
+    nav > ul {
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+        color: #ffffff;
+    }
+
+}
+
+
 
