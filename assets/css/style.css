@@ -8,7 +8,6 @@ body{
 }
 /* ============================== section 2 VB ============================== */
 #sec2{
-    min-height: 100vh;
     display: flex;
     width: 100%;
 }
@@ -44,7 +43,6 @@ body{
     flex-direction: column-reverse;
 }
 .right>.rightP{
-    max-width: 100%;
     padding-top: 7.4%;
     padding-bottom: 7.4%;
     background-color: #f3f3f3;
@@ -68,12 +66,13 @@ body{
     width: 100%;
 }
 /* =========================== Line top =========================== */
-.lineTop{
+#sec3>.lineTop{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .lineTop>.B{
+    position: relative;
     font-family: 'Roboto', sans-serif;
     font-size: 15.438rem;
     margin: 2rem;
@@ -81,33 +80,92 @@ body{
     overflow: visible;
 }
 .lineTop>.lets{
+    font-family: "Gotham", sans-serif ;
+    margin-top: 10rem;
+    position: absolute;
     font-size: 2.375rem;
     text-align: center;
 }
 .lineTop>h2{
+    margin: 3%;
     font-size: 1.875rem;
     text-align: center;
 }
 /* =========================== Line Bottom =========================== */
 #sec3>.lineBottom{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 7em;
-    margin-right: 7em;
+    height: 50vh;
+    justify-content: center;
+    margin: 0 15%;
 }
 #sec3>.lineBottom h3{
+    margin: 10%;
     color: #d21242;
-    text-align: inherit;
+    text-align: center;
     font-size: 1.125rem;
+    max-width: 100%;
 }
 #sec3>.lineBottom p{
     color: #222222;
     font-size: 0.938rem;
     text-align: center;
+    max-width: 13.75rem;
+}
+/* =========================== Line Bottom Img =========================== */
+
+
+.lineBottom>.line1,.line2,.line3,.line4{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+.line1>.img1{
+    width: 100%;
+    height: 350px;
+    background: url(../img/img1.png);
+    background-position: center;
+    background-size: cover;
+}
+.line2>.img2{
+    width: 100%;
+    height: 350px;
+    background: url(../img/img2.png);
+    background-position: center;
+    background-size: cover;
+}
+.line3>.img3{
+    width: 100%;
+    height: 350px;
+    background: url(../img/img3.png);
+    background-position: center;
+    background-size: cover;
+}
+.line4>.img4{
+    width: 100%;
+    height: 350px;
+    background: url(../img/img1.png);
+    background-position: center;
+    background-size: cover;
 }
 
 
 
-
 /* ============================== footer VB ============================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
