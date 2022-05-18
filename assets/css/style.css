@@ -1,5 +1,5 @@
-/*----------------------Font-familly-------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/*----------------------Font-familly--------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @font-face {
     font-family: "Open Sans";
     src: url("../font/OpenSans-Regular.ttf");
@@ -20,52 +20,110 @@
     font-family: "MyriadPro-Regular";
     src: url("../font/MYRIADPRO-REGULAR.OTF");
 }
-/*---------------------------Global chris/pc--------------------------------*/
+/*------------------------------Global chris/pc-----------------------------------------*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*------------------------------Section Navigation chris/pc--------------------*/
+body{
+    width: 100%;
+    height: 100%;
+}
+/*------------------------------Section Navigation chris/pc-------------------------*/
 #boxNav{
-    background-image: url(../img/header.png);
+    background: url(../img/header.png) center top/cover;
     width: 100%;
     min-width: 100vh;
-}
-#boxNav > nav{
-    height: 125px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-#boxNav > nav > ul{
+#boxNav > nav {
+    width: 100%;
+    height: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.37);
 }
+/* ----------Partie Logo ACS--chris/pc-------------*/
+#boxNav > nav >.boxLogo {
+    width: 20%;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 40;
+}
+#boxNav > nav > .boxLogo > .carre {
+    width: 67px;
+    height: 67px;
+    position: absolute;
+}
+#boxNav > nav > .boxLogo > .carre.blanc {
+    background: rgba(255,255,255,0.70);
+    margin-left: 20px;
+    margin-top: 20px;
+    z-index: 30;
+}
+#boxNav > nav > .boxLogo > .carre.rose {
+    background: #d21242;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#boxNav > nav > .boxLogo > .carre.rose > p {
+    font-size: 1.875em;
+    color: #f5f5f5;
+    font-family: "Roboto";
+    font-weight: 700;
+    user-select: none;
+}
+/*--------------Parite Navigation chris/pc-----------------*/
+#boxNav > nav > ul{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}  
 #boxNav > nav > ul > li{
     list-style-type: none;
-    color: white;
-    margin: 0 px 20px;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#boxNav >nav > ul > li > a {
+#boxNav > nav > ul > li > a {
     text-decoration:  none;
     color: white;
-    padding: 0px 20px;
     font-family: "MyriadPro-Regular";
-    font-size: 1.25em;
+    font-size: 1.1em;
 }
-/*---------------------------Nav Réseau sociaux chris/pc---------------*/
-.boxReseau{
+#boxNav > nav > ul > li:hover {
+    color: #d21242;
+    border-bottom: 3px solid #d21242;
+}
+/*---------------------------Partie Nav Réseau sociaux chris/pc---------------------------*/
+#boxNav > nav >.boxReseau{
+    width: 20%;
     display: flex;
+    align-items: flex-start;
 }
-.boxReseau > a{
+#boxNav > nav >.boxReseau > a{
     font-size: 20px;
     padding: 0px 20px;
     color: #ffff;
     text-decoration: none;
 }
-/*---------------------------------section Header chris/pc------------------*/
+#boxNav > nav >.boxReseau > a:hover{
+    color: #d21242;
+}
+/*---------------------------------section Header chris/pc-------------------------*/
 header{
        min-height: 100vh;
        display: flex;
@@ -73,27 +131,35 @@ header{
        justify-content: center;
        flex-direction: column;
 }
-header>h1{
+header > h1{
     font-size:9.563em;
     color: #f5f5f5;
-    font-family: "GothamBold";
+    font-family: "GothamBook";
 }
-header>p{
+header > p{
     font-size:0.813em;
     font-family: "Open Sans";
     color: #ffff;
     margin-top: 100px;
+    
 }
-header > div > .fa-solid{
-    border: 1px solid #ffffff;
-    border-radius: 32px;
-    font-size: 1.25em;
+header > .roundH {
     width: 65px;
     height: 65px;
-}
-header > div > .fa-chevron-down{
+    border: 1px solid #ffffff;
+    border-radius: 50px;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header > div > a > .fa-chevron-down{
     color: #ffffff;
+    font-size: 30px;
+}
+header > div > a > i:hover{
+    color: #d21242;
+    transform: rotate(180deg);
 }
 /*----------------------------section Nav burger/none-------chris/pc---------------*/
 #mobileNavArea{
@@ -105,7 +171,7 @@ header > div > .fa-chevron-down{
 #closeNav{
     display: none;
 }
-/*---------------------------section 1 chris/pc-----------------------------*/
+/*----------------------------------section 1 chris/pc-----------------------------*/
 #section1{
     width: 100%;
     min-height: 100vh;
@@ -120,21 +186,25 @@ header > div > .fa-chevron-down{
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: relative;
 }
 #section1 > .boxTitle > h2{
-    height: 100%;
     font-size: 2.375em;
     color: #ffffff;
+    font-family:"GothamBook";
+    font-weight: 500;
     position: absolute;
+    margin-top: 105px;
+    z-index: 2;
 }
-#section1 >.boxTitle > .w{
+#section1 > .boxTitle > .w{
     font-size: 15.348em;
     color: #da3d64;
     font-family: "Roboto";
-    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    user-select: none;
 }
-/*---------------------section partie activity  chris/pc--------------------*/
+/*----------------------------section partie activity  chris/pc--------------------*/
 #activity{
     width: 100%;
     height: 50%;
@@ -154,15 +224,20 @@ header > div > .fa-chevron-down{
     padding: 50px 0px;
     width: 2.125em;
 }
+#activity > .write > a{
+    color: #ffffff; 
+    padding: 50px 0px;
+}
 #activity > .write > h3{
     font-size: 1.125em;
     font-family: "GothamBook";
     padding: 20px 0px;
 }
 #activity > .write > p{
-    width: 72%;
+    width: 52%;
     font-size: 0.938em;
     line-height: 1.3em;
     padding: 20px 0px;
     text-align: justify;
 }
+
