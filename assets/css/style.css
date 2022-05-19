@@ -19,8 +19,7 @@
 @font-face {    
     font-family: "MyriadPro-Regular";
     src: url("../font/MYRIADPRO-REGULAR.OTF");
-}
-/*------------------------------Global chris/pc-----------------------------------------*/
+}/*------------------------------Global chris/pc-----------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -47,8 +46,7 @@
     justify-content: center;
     align-items: center;
     border-bottom: 3px solid rgba(255, 255, 255, 0.37);
-}
-/* ---------------------Partie Logo ACS--chris/pc-----------------------------------------*/
+}/* ---------------------Partie Logo ACS--chris/pc-----------------------------------------*/
 #boxNav > nav > .boxLogo {
     width: 20%;
     display:  flex;
@@ -83,8 +81,7 @@
     font-family: "Roboto";
     font-weight: 700;
     user-select: none;
-}
-/*---------------------------Parite Navigation chris/pc---------------------------------------*/
+}/*---------------------------Parite Navigation chris/pc---------------------------------------*/
 #boxNav > nav > ul {
     width: 60%;
     height: 100%;
@@ -109,8 +106,7 @@
 #boxNav > nav > ul > li:hover {
     color: #d21242;
     border-bottom: 3px solid #d21242;
-}
-/*---------------------------Partie Nav Réseau sociaux chris/pc---------------------------*/
+}/*---------------------------Partie Nav Réseau sociaux chris/pc---------------------------*/
 #boxNav > nav >.boxReseau {
     width: 20%;
     display: flex;
@@ -123,8 +119,7 @@
 }
 #boxNav > nav >.boxReseau > a:hover {
     color: #d21242;
-}
-/*---------------------------Partie Navigation burger chris/pc----------------------------*/
+}/*---------------------------Partie Navigation burger chris/pc----------------------------*/
 .none{
     display: none !important;
 }
@@ -136,7 +131,7 @@
 }
 #closeNav {
     display: none;
-    /*margin-right: 10px;*/
+    margin-right: 10px;
     cursor: pointer;
     color: #ffffff;
 }
@@ -167,8 +162,7 @@
 }
 #mobileNavArea > ul > li > a:hover{
     color: #d21242;
-}
-/*---------------------------partie reseau sociaux  mobile chris/pc------------------------*/
+}/*---------------------------partie reseau sociaux  mobile chris/pc------------------------*/
 .mobileReseau {
  width: 100%;
  display: flex;
@@ -182,8 +176,7 @@
 }
 .fa-brands:hover{
     color: #d21242;
-}
-/*---------------------------------section Header chris/pc-----------------------------------*/
+}/*---------------------------------section Header chris/pc-----------------------------------*/
 header {
        min-height: 100vh;
        display: flex;
@@ -192,7 +185,7 @@ header {
        flex-direction: column;
 }
 header > h1 {
-    font-size:9.563em;
+    font-size:9em;
     color: #f5f5f5;
     font-family: "GothamBook";
 }
@@ -220,8 +213,7 @@ header > div > a > .fa-chevron-down {
 header > div > a > i:hover {
     color: #d21242; 
     transform: rotate(180deg);
-}
-/*----------------------------------section 1 chris/pc-----------------------------*/
+}/*----------------------------------section 1 chris/pc-----------------------------*/
 #section1 {
     width: 100%;
     min-height: 100vh;
@@ -259,8 +251,7 @@ header > div > a > i:hover {
     font-family: "Roboto";
     z-index: -1;
     user-select: none;
-}
-/*----------------------------section partie activity  chris/pc--------------------*/
+}/*----------------------------section partie activity  chris/pc--------------------*/
 #section1 > #activity {
     width: 100%;
     min-height: 50vh;
@@ -286,13 +277,12 @@ header > div > a > i:hover {
     padding: 20px 0px;
 }
 #section1 > #activity > .write > p {
-    width: 52%;
+    width: 78%;
     font-size: 0.938em;
     line-height: 1.3em;
     padding: 20px 0px;
     text-align: justify;
-}
-/* ------------------------------------------responsive chris/tablette max-width 1024px------------------------------------------------*/
+}/* ------------------------------------------responsive chris/tablette max-width 1024px------------------------------------------------*/
 @media screen and (max-width: 1024px) {
 /*------------------------Partie Navivagtion logo chris/tablette-1024-------------------------------*/   
 #boxNav > nav > .boxLogo > .carre {
@@ -301,16 +291,14 @@ header > div > a > i:hover {
 }
 #boxNav > nav > .boxLogo > .carre.rose > p {
         font-size: 1.1em;
-}
-/*-------------------Parite Navigation chris/tablette-1024px------------------------------------------*/
+}/*-------------------Parite Navigation chris/tablette-1024px------------------------------------------*/
 #boxNav > nav {
     justify-content: space-between;
     align-items: center;
 }
 #boxNav > nav > ul {
     display: none;
-}
-/*---------------------------Partie Nav Réseau sociaux chris/tablette-1024px---------------------------*/
+}/*---------------------------Partie Nav Réseau sociaux chris/tablette-1024px---------------------------*/
 #boxNav > nav >.boxReseau {
        display: none;
 }
@@ -320,12 +308,11 @@ header > div > a > i:hover {
     align-items: flex-end;
 }
 #mobileNavArea > .mobileReseau > a{
-    padding: 20px 0px;
+    padding: 20px 10px;
 }
 .mobileReseau {
     padding: 0px 20px;
-}
-/*--------------------------Partie Nav burger chris/tablette-1024px-------------------------------------*/
+}/*--------------------------Partie Nav burger chris/tablette-1024px-------------------------------------*/
 #burger {
     display: block;
     color: #ffffff;
@@ -335,49 +322,38 @@ header > div > a > i:hover {
     display: block;
     color: #ffffff;
     padding: 0 20px;
-}
-/*---------------------------------section Header chris/tablette-1024px--------------------------------*/
+}/*---------------------------------section Header chris/tablette-1024px--------------------------------*/
 header > h1 {
     font-size:5.5em;
-}
-/*---------------------------------section 1 activity chris/tablette-1024px-----------------------------*/
+}/*---------------------------------section 1 activity chris/tablette-1024px-----------------------------*/
 #section1 > .boxTitle > h2 {
     font-size: 2.5em;
 }
 #section1 > .boxTitle > .w {
     font-size: 14em;
-}
-#section1 > #activity > .write > p {
-    width: 78%;
-}
-/*----------------------------section partie activity  chris/tablette-1024px----------------------------*/
+}/*----------------------------section partie activity  chris/tablette-1024px----------------------------*/
 #section1 > #activity > .write > h3 {
     font-size: 1em;
 }
-}
-/* ------------------------------------------responsive chris/tablette max-width 768px------------------------------------------------*/
+}/* ------------------------------------------responsive chris/tablette max-width 768px------------------------------------------------*/
 @media screen and (max-width: 768px) {
 /*---------------------------Partie Navigation burger chris/tablette max-width: 768px;----------------------------*/
 #mobileNavArea > ul > li > a{
     margin: 0px 54px;
-}
-/*---------------------------partie reseau sociaux  mobile chris/pc------------------------*/
+}/*---------------------------partie reseau sociaux  mobile chris/pc------------------------*/
 .mobileReseau {
     padding: 0px 20px;
-}
-/*---------------------------------section Header chris/tablette-768px--------------------------------*/
+}/*---------------------------------section Header chris/tablette-768px--------------------------------*/
 header > h1 {
-    font-size:5em;
-}
-/*----------------------------------section 1 chris/tablette-768px---------------------------------*/
+    font-size:3.5em;
+}/*----------------------------------section 1 chris/tablette-768px---------------------------------*/
 #section1 > .boxTitle > h2 {
     font-size: 2.3em;
     text-align: center;
 }
 #section1 > .boxTitle > h2::before {
     top: -100px;
-}
-/*------------------------section partie activity  chris/tablette-768px----------------------------*/
+}/*------------------------section partie activity  chris/tablette-768px----------------------------*/
 #section1 > #activity {
     flex-wrap: wrap;
 }
@@ -394,11 +370,55 @@ header > h1 {
 #section1 > #activity > .write > p {
     font-size: 0.875em;
 }
-}
+}/* ------------------------------------------responsive chris/tablette max-width 425px------------------------------------------------*/
 @media screen and (max-width: 425px) {   
-
+header > h1 {
+    font-size: 2.8em;
 }
-  
+#mobileNavArea > ul > li {
+    margin: 15px -35px;
+}
+header > .roundH {
+    width: 55px;
+    height: 55px;
+}
+header > div > a > .fa-chevron-down {
+    font-size: 25px;
+}
+#section1 > .boxTitle > h2 {
+    font-size: 1.8em;
+}
+#section1 > #activity > .write > a {
+    font-size: 1em;
+}
+#section1 > #activity > .write > p {
+    width: 90%;
+}
+}/* ------------------------------------------responsive chris/tablette max-width 390px------------------------------------------------*/
+@media screen and (max-width: 390px) { 
+#section1 > #activity {
+    flex-direction: column;
+    width: 100%;
+}
+#section1 > #activity > .write > p {
+    width: 100%;
+}
+#section1 > #activity > .write > a {
+    font-size: 1.2em;
+}
+}/* ------------------------------------------responsive chris/tablette max-width 375px------------------------------------------------*/
+@media screen and (max-width: 375px) { 
+header > h1 {
+    font-size: 2.5em;
+}    
+#section1 > #activity > .write > p {
+    width: 100%;
+}
+#section1 > #activity > .write > a {
+    font-size: 1em;
+}
+}
+ 
 
 
 
