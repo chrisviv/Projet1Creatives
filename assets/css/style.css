@@ -167,31 +167,27 @@
     width: 80%;
 }
 /* =========================== Line Bottom Img VB =========================== */
-.lineBottom>.line1,.line2,.line3,.line4{
+.lineBottom>.line{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     margin: 1rem;
 }
-.line1>.img1{
+.lineBottom>.line> .img1, .img2, .img3, .img4{
     width: 100%;
-    height: 250px;
+    height: 180px;
+}
+.line>.img1{
     background: url(../img/img1.png) center center/cover;
 }
-.line2>.img2{
-    width: 100%;
-    height: 250px;
+.line>.img2{
     background: url(../img/img2.png) center center/cover;
 }
-.line3>.img3{
-    width: 100%;
-    height: 250px;
+.line>.img3{
     background: url(../img/img3.png) center center/cover;
 }
-.line4>.img4{
-    width: 100%;
-    height: 250px;
+.line>.img4{
     background: url(../img/img1.png) center center/cover;
 }
 /* ============================== footer VB ============================== */
@@ -263,21 +259,9 @@ footer>.cR{
 /* ============================== Media 1024 VB ============================== */
 @media screen and (max-width:1024px){
 /* ===================== Media 1024 (Section3) VB ===================== */
-    .line1>.img1{
-        width: 90%;
-        max-height: 350px;
-    }
-    .line2>.img2{
-        width: 90%;
-        height: 350px;
-    }  
-    .line3>.img3{
-        width: 90%;
-        height: 350px;
-    }
-    .line4>.img4{
-        width: 90%;
-        height: 350px;
+    .line>.img1, .img2, .img3, .img4{
+        width: 80%;
+        height: 150px;
     }
     #sec3>.lineBottom h3{
         margin: 10px 10px;
@@ -290,9 +274,9 @@ footer>.cR{
         font-size: 0.8rem;
     }
     .lineTop>h2{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
-    .lineBottom>.line1,.line2,.line3,.line4{
+    .lineBottom>.line{
         margin: 0;
     }
     /* ===================== Media 1024 (Footer) VB ===================== */
