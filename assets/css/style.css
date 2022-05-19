@@ -36,7 +36,7 @@
 }
 /* =========================== Left VB =========================== */
 #sec2>.left{
-    height: 50%;
+    min-height: 50%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -52,14 +52,19 @@
 .left>.leftP>p{
     width: 60%;
     color: white;
+    justify-content: flex-start;
     line-height: 24px;
     max-height: 50vh;
+    font-size: 2vh;
+    font-family: "GothamBook", sans-serif;
 }
 .left>.leftP>h3{
     color: white;
     line-height: 36px;
     width: 60%;
     margin: 5px 0 20px 0;
+    font-size: 4vh;
+    font-family: "GothamBold", sans-serif;
 }
 .left>.leftImg{
     height: 50vh;
@@ -82,13 +87,18 @@
 }
 .right>.rightP>p{
     width: 60%;
+    justify-content: flex-start;
     line-height: 24px;
     max-height: 50vh;
+    font-size: 2vh;
+    font-family: "GothamBook", sans-serif;
 }
 .right>.rightP>h3{
     width: 60%;
     margin: 5px 0 20px 0;
+    font-size: 4vh;
     line-height: 36px;
+    font-family: "GothamBold", sans-serif;
 }
 .right>.rightImg{
     height: 50vh;
@@ -96,6 +106,10 @@
 }
 /* ============================== section 3 VB ============================== */
 #sec3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     width: 100%;
 }
@@ -104,35 +118,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 40vh;
+    width: 100%;
 }
 .lineTop>.B{
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-size: 15.438rem;
-    margin: 1rem;
-    margin-bottom: -50px;
     color: #d21242;
     overflow: visible;
     user-select: none;
+    font-weight: 1000;
 }
 .lineTop>.lets{
-    font-family: "Gotham", sans-serif ;
-    margin-top: 9rem;
+    font-family: "GothamMedium", sans-serif ;
+    margin-top: 7.8rem;
     position: absolute;
     font-size: 2.375rem;
-    text-align: center;
+    font-weight: lighter;
 }
 .lineTop>h2{
-    margin: 3%;
+    font-family: "GothamBook", sans-serif;
     font-size: 1.875rem;
     text-align: center;
+    font-weight: lighter;
 }
 /* =========================== Line Bottom VB =========================== */
 #sec3>.lineBottom{
     display: flex;
-    height: 50vh;
-    width: 100%;
-    margin-bottom: 100px;
+    height: 90vh;
+    width: 80%;
+    align-items: center;
     justify-content: center;
 }
 #sec3>.lineBottom h3{
@@ -140,7 +156,7 @@
     color: #d21242;
     text-align: center;
     font-size: 1.125rem;
-    max-width: 100%;
+    width: 100%;
     line-height: 36px;
 }
 #sec3>.lineBottom p{
@@ -148,33 +164,34 @@
     font-size: 0.938rem;
     line-height: 24px;
     text-align: center;
-    max-width: 13.75rem;
+    width: 80%;
 }
 /* =========================== Line Bottom Img VB =========================== */
 .lineBottom>.line1,.line2,.line3,.line4{
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     margin: 1rem;
 }
 .line1>.img1{
     width: 100%;
-    height: 350px;
+    height: 250px;
     background: url(../img/img1.png) center center/cover;
 }
 .line2>.img2{
     width: 100%;
-    height: 350px;
+    height: 250px;
     background: url(../img/img2.png) center center/cover;
 }
 .line3>.img3{
     width: 100%;
-    height: 350px;
+    height: 250px;
     background: url(../img/img3.png) center center/cover;
 }
 .line4>.img4{
     width: 100%;
-    height: 350px;
+    height: 250px;
     background: url(../img/img1.png) center center/cover;
 }
 /* ============================== footer VB ============================== */
@@ -198,11 +215,11 @@ footer>.bgFooter{
     align-items: center;
 }
 .bgFooter>.footerL>p{
-    width: 50%;
+    width: 60%;
     line-height: 24px;
     color: white;
     font-size: 0.938rem;
-    font-family: "Gotham", sans-serif;
+    font-family: "GothamBook", sans-serif;
 }
 .footerL>a>i{
     color: #ffffff;
@@ -215,10 +232,12 @@ footer>.bgFooter{
     align-items: center;
 }
 .bgFooter>.footerR>p{
-    width: 50%;
+    width: 60%;
     line-height: 24px;
     color: white;
     font-size: 0.938rem;
+    font-family: "GothamBook", sans-serif;
+
 }
 .footerR>a>i{
     color: #ffffff;
@@ -238,20 +257,108 @@ footer>.cR{
     line-height: 36px;
     color: #ffffff;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
 }
 
-@media screen and (max-width:1024){
+/* ============================== Media 1024 VB ============================== */
+@media screen and (max-width:1024px){
+/* ===================== Media 1024 (Section3) VB ===================== */
+    .line1>.img1{
+        width: 90%;
+        max-height: 350px;
+    }
+    .line2>.img2{
+        width: 90%;
+        height: 350px;
+    }  
+    .line3>.img3{
+        width: 90%;
+        height: 350px;
+    }
+    .line4>.img4{
+        width: 90%;
+        height: 350px;
+    }
+    #sec3>.lineBottom h3{
+        margin: 10px 10px;
+        width: 80%;
+        font-size: 0.75rem;
+    }
+    #sec3>.lineBottom p{
+        margin: 10px 10px;
+        width: 80%;
+        font-size: 0.8rem;
+    }
+    .lineTop>h2{
+        font-size: 1.4rem;
+    }
+    .lineBottom>.line1,.line2,.line3,.line4{
+        margin: 0;
+    }
+    /* ===================== Media 1024 (Footer) VB ===================== */
+    .bgFooter>.footerL>p{
+        width: 70%;
+        font-size: 0.8rem;
+    }
+    .bgFooter>.footerR>p{
+        width: 70%;
+        font-size: 0.8rem;
+    }
+}
+/* ============================== Media 768 VB ============================== */
+@media screen and (max-width:768px){
+/* ===================== Media 768 (Section 2) VB ===================== */
+    .left>.leftP>p{
+        font-size: 1.8vh;
+        line-height: 20px;
+    }
+    .left>.leftP>h3{
+        font-size: 3.8vh;
+        line-height: 20px;
+    }
+    .right>.rightP>p{
+        font-size: 1.8vh;
+        line-height: 20px;
+    }
+    .right>.rightP>h3{
+        font-size: 3.8vh;
+        line-height: 20px;
+    }
+/*===================== Media 768 (Section 3)VB ===================== */
+    .line1>.img1{
+        width: 50%;
+        height: 50px;
+    }
+    .line2>.img2{
+        width: 50%;
+        height: 50px;
+    }  
+    .line3>.img3{
+        width: 50%;
+        height: 50px;
+    }
+    .line4>.img4{
+        width: 50%;
+        height: 50px;
+    }
+    #sec3>.lineBottom h3{
+        margin: 10px 10px;
+        width: 50%;
+        font-size: 0.75rem;
+    }
+    #sec3>.lineBottom p{
+        margin: 10px 10px;
+        width: 50%;
+        font-size: 0.8rem;
+    }
+    #sec3>.lineBottom{
+        flex-wrap: wrap;
+        background-color: #d21242;
+    }
+    .lineBottom>.line1,.line2{
+    }
+    .lineBottom>,.line3,.line4{
 
-    #sec2>.left>.leftP>p{
-        background: blue;
-        width: 50%;
-        max-height: 50vh;
     }
-    #sec2>.left>.leftP>h3{
-        width: 50%;
-        margin: 5px 0 20px 0;
-    }
-    
 }
 
