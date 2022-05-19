@@ -1,18 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@font-face {
+    font-family: "Open Sans";
+    src: url("../font/OpenSans-Regular.ttf");
+}
+@font-face {    
+    font-family: "GothamBold";
+    src: url("../font/GothamBold.ttf");
+}
+@font-face {    
+    font-family: "GothamBook";
+    src: url("../font/GothamBook.ttf");
+}
+@font-face {    
+    font-family: "GothamMedium";
+    src: url("../font/GothamMedium.ttf");
+}
+@font-face {    
+    font-family: "MyriadPro-Regular";
+    src: url("../font/MYRIADPRO-REGULAR.OTF");
+
+}
+/* ============================== Body ============================== */
 *{
     margin: 0;
     padding: 0;
-}
-body{
     box-sizing: border-box;
-    /* user-select: none; */
 }
 /* ============================== section 2 VB ============================== */
 #sec2{
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;  
     width: 100%;
 }
 /* =========================== Left VB =========================== */
@@ -23,49 +42,56 @@ body{
     flex-direction: column;
 }
 .left>.leftP{
-    color: white;
-    background-color: #222222;
-    padding-top: 7.4%;
-    padding-bottom: 7.4%;
-}
-.left>.leftP p ,h3{
-    margin: 2rem;
-    max-width: 50%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: left;
-    max-height: 50%;
-
+    align-items: center;
+    background-color: #222222;
+    height: 50vh;
+}
+.left>.leftP p{
+    width: 60%;
+    color: white;
+    line-height: 24px;
+    max-height: 50vh;
 }
 .left>.leftP h3{
+    color: white;
     line-height: 36px;
+    width: 60%;
+    margin: 5px 0 20px 0;
 }
 .left>.leftImg{
-    height: 28.125rem;
+    height: 50vh;
     background: url(../img/leftimg.png) center center/cover;
 }
 /* =========================== Right VB =========================== */
 #sec2>.right{
+    height: 50%;
     width: 50%;
     display: flex;
     flex-direction: column-reverse;
 }
 .right>.rightP{
-    padding-top: 7.4%;
-    padding-bottom: 7.4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
     background-color: #f3f3f3;
 }
-.right>.rightP p, h3{
-    margin: 2rem;
-    max-width: 50%;
-    text-align: left;
-    max-height: 50%;
-    margin-left: 10rem;
+.right>.rightP p{
+    width: 60%;
+    line-height: 24px;
+    max-height: 50vh;
 }
 .right>.rightP h3{
+    width: 60%;
+    margin: 5px 0 20px 0;
     line-height: 36px;
 }
 .right>.rightImg{
-    height: 28.125rem;
+    height: 50vh;
     background: url(../img/rightimg.png) center center/cover;
 }
 /* ============================== section 3 VB ============================== */
