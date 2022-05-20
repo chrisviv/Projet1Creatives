@@ -1,0 +1,7 @@
+
+#d21242 pink
+#222222 gray
+#fffff white
+#f3f3f3 light gray block
+#d5d5d5 light gray ACS
+
