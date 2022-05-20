@@ -24,6 +24,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 /*body {
     width: 100%;
@@ -46,6 +47,8 @@
     justify-content: center;
     align-items: center;
     border-bottom: 3px solid rgba(255, 255, 255, 0.37);
+    position: fixed;
+    top: 0;
 }/* ---------------------Partie Logo ACS--chris/pc-----------------------------------------*/
 #boxNav > nav > .boxLogo {
     width: 20%;
@@ -185,9 +188,21 @@ header {
        flex-direction: column;
 }
 header > h1 {
-    font-size:9em;
+    font-size: 7.5em;
     color: #f5f5f5;
     font-family: "GothamBook";
+    margin-top: 50px;
+    text-align: center;
+    animation: apparition 1s ease-out;
+}
+@keyframes apparition {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);}
+        to{
+            opacity: 1; 
+            transform: translateY(0px);
+        }
 }
 header > p {
     font-size:0.813em;
@@ -270,6 +285,7 @@ header > div > a > i:hover {
     color: #ffffff; 
     padding: 50px 0px;
     font-size: 1.2em;
+    
 }
 #section1 > #activity > .write > h3 {
     font-size: 1.125em;
@@ -281,10 +297,13 @@ header > div > a > i:hover {
     font-size: 0.938em;
     line-height: 1.3em;
     padding: 20px 0px;
-    text-align: justify;
+    text-align: center;
 }/* ------------------------------------------responsive chris/tablette max-width 1024px------------------------------------------------*/
 @media screen and (max-width: 1024px) {
 /*------------------------Partie Navivagtion logo chris/tablette-1024-------------------------------*/   
+#boxNav > nav {
+    position: static;
+}
 #boxNav > nav > .boxLogo > .carre {
         width: 50px;
         height: 50px;

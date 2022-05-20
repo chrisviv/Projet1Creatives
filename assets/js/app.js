@@ -1,3 +1,15 @@
+window.onscroll = () => {
+	if (window.scrollY > 200) {
+		document.getElementById('nav').style.background = '#0000007e';
+		document.getElementById('nav').style.backdrop = '#0000007e';
+		document.getElementById('nav').style.boxShadow ='1px 4px 13px 0px rgba(0,0,0,0.75)';
+	} else {
+        /*console.log('inf');*/
+		document.getElementById('nav').style.background = 'transparent';
+		document.getElementById('nav').style.boxShadow = 'inherit';
+	}
+  };
+/*---------------modale navigation-----------------------------*/
 var burger = document.getElementById('burger');
 var closeNav = document.getElementById('closeNav');
 var mobileNavArea = document.getElementById('mobileNavArea');
@@ -25,3 +37,4 @@ closeNav.addEventListener('click', function(){
     burger.classList.remove('none');
     
 })
+
