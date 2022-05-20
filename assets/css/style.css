@@ -36,7 +36,7 @@
 }
 /* =========================== Left VB =========================== */
 #sec2>.left{
-    min-height: 50%;
+    height: 100vh;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@
 }
 /* =========================== Right VB =========================== */
 #sec2>.right{
-    height: 50%;
+    height: 100vh;
     width: 50%;
     display: flex;
     flex-direction: column-reverse;
@@ -294,18 +294,20 @@ footer>.cR{
 /* ===================== Media 768 (Section 2) VB ===================== */
     .left>.leftP>p{
         font-size: 1.8vh;
-        line-height: 20px;
+        line-height: 17px;
     }
     .left>.leftP>h3{
-        font-size: 3.8vh;
-        line-height: 20px;
+        padding-top: 10px;
+        font-size: 3.5vh;
+        line-height: 17px;
     }
     .right>.rightP>p{
         font-size: 1.8vh;
-        line-height: 20px;
+        line-height: 17px;
     }
     .right>.rightP>h3{
-        font-size: 3.8vh;
+        font-size: 3.5vh;
+        padding-top: 10px;
         line-height: 20px;
     }
 /*===================== Media 768 (Section 3)VB ===================== */
