@@ -3,103 +3,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @font-face {
     font-family: "Open Sans";
-    src: url("../font/OpenSans-Regular.ttf");
-}
+    src: url("../font/OpenSans-Regular.ttf");}
 @font-face {    
     font-family: "GothamBold";
-    src: url("../font/GothamBold.ttf");
-}
+    src: url("../font/GothamBold.ttf");}
 @font-face {    
     font-family: "GothamBook";
-    src: url("../font/GothamBook.ttf");
-}
+    src: url("../font/GothamBook.ttf");}
 @font-face {    
     font-family: "GothamMedium";
-    src: url("../font/GothamMedium.ttf");
-}
+    src: url("../font/GothamMedium.ttf");}
 @font-face {    
     font-family: "MyriadPro-Regular";
-    src: url("../font/MYRIADPRO-REGULAR.OTF");
-
-}
+    src: url("../font/MYRIADPRO-REGULAR.OTF");}
 /* ============================== Body ============================== */
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 /* ============================== section 2 VB ============================== */
 #sec2{
     min-height: 100vh;
     display: flex;
-    width: 100%;
-}
+    width: 100%;}
 /* =========================== Left VB =========================== */
 #sec2>.left{
     width: 50%;
     display: flex;
-    flex-direction: column;
-}
+    flex-direction: column;}
 .left>.leftP{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #222222;
-    height: 50vh;
-}
+    height: 50vh;}
 .left>.leftP>p{
     width: 60%;
     color: white;
     justify-content: flex-start;
     line-height: 24px;
     font-size: 2vh;
-    font-family: "GothamBook", sans-serif;
-}
+    font-family: "GothamBook", sans-serif;}
 .left>.leftP>h3{
     color: white;
     line-height: 36px;
     width: 60%;
     margin: 5px 0 20px 0;
     font-size: 4vh;
-    font-family: "GothamBold", sans-serif;
-}
+    font-family: "GothamBold", sans-serif;}
 .left>.leftImg{
     height: 50vh;
-    background: url(../img/leftimg.png) center center/cover;
-}
+    background: url(../img/leftimg.png) center center/cover;}
 /* =========================== Right VB =========================== */
 #sec2>.right{
     width: 50%;
     display: flex;
-    flex-direction: column-reverse;
-}
+    flex-direction: column-reverse;}
 .right>.rightP{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 50vh;
-    background-color: #f3f3f3;
-}
+    background-color: #f3f3f3;}
 .right>.rightP>p{
     width: 60%;
     justify-content: flex-start;
     line-height: 24px;
     font-size: 2vh;
-    font-family: "GothamBook", sans-serif;
-}
+    font-family: "GothamBook", sans-serif;}
 .right>.rightP>h3{
     width: 60%;
     margin: 5px 0 20px 0;
     font-size: 4vh;
     line-height: 36px;
-    font-family: "GothamBold", sans-serif;
-}
+    font-family: "GothamBold", sans-serif;}
 .right>.rightImg{
     height: 50vh;
-    background: url(../img/rightimg.png) center center/cover;
-}
+    background: url(../img/rightimg.png) center center/cover;}
 /* ============================== section 3 VB ============================== */
 #sec3{
     display: flex;
@@ -108,16 +90,14 @@
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    margin-bottom: 75px;
-}
+    margin-bottom: 75px;}
 /* =========================== Line top VB =========================== */
 #sec3>.lineTop{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 25px;
-}
+    margin-bottom: 25px;}
 .lineTop>.B{
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -125,116 +105,95 @@
     color: #d21242;
     overflow: visible;
     user-select: none;
-    font-weight: 1000;
-}
+    font-weight: 1000;}
 .lineTop>.lets{
     font-family: "GothamMedium", sans-serif ;
     margin-top: 7.8rem;
     position: absolute;
     font-size: 2.375rem;
-    font-weight: lighter;
-}
+    font-weight: lighter;}
 .lineTop>h2{
     font-family: "GothamBook", sans-serif;
     font-size: 1.875rem;
     text-align: center;
-    font-weight: lighter;
-}
+    font-weight: lighter;}
 /* =========================== Line Bottom VB =========================== */
 #sec3>.lineBottom{
     display: flex;
     width: 80%;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center;}
 #sec3>.lineBottom h3{
     margin: 10px 0 10px 0;
     color: #d21242;
     text-align: center;
     font-size: 1.125rem;
     width: 100%;
-    line-height: 36px;
-}
+    line-height: 36px;}
 #sec3>.lineBottom p{
     color: #222222;
     font-size: 0.938rem;
     line-height: 24px;
     text-align: center;
-    width: 80%;
-}
+    width: 80%;}
 /* =========================== Line Bottom Img VB =========================== */
 .lineBottom>.line{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin: 1rem;
-}
+    margin: 1rem;}
 .lineBottom>.line>.img1, .img2, .img3{
     width: 100%;
-    height: 180px;
-}
+    height: 180px;}
 .line>.img1{
-    background: url(../img/img1.png) center center/cover;
-}
+    background: url(../img/img1.png) center center/cover;}
 .line>.img2{
-    background: url(../img/img2.png) center center/cover;
-}
+    background: url(../img/img2.png) center center/cover;}
 .line>.img3{
-    background: url(../img/img3.png) center center/cover;
-}
+    background: url(../img/img3.png) center center/cover;}
 /* ============================== footer VB ============================== */
 footer{
     max-height: 100vh;
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
+    width: 100%;}
 footer>.bgFooter{
     background-color: #d21242;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 391px;
-}
+    height: 391px;}
 /* ============================== footer Left VB ============================== */
 .bgFooter>.footerL, p{
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center;}
 .bgFooter>.footerL>p{
     width: 60%;
     line-height: 24px;
     color: white;
     font-size: 0.938rem;
-    font-family: "GothamBook", sans-serif;
-}
+    font-family: "GothamBook", sans-serif;}
 .footerL>a>i{
     color: #ffffff;
-    padding: 10px;
-}
+    padding: 10px;}
 /* ============================== footer Right VB ============================== */
 .bgFooter>.footerR, p{
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center;}
 .bgFooter>.footerR>p{
     width: 60%;
     line-height: 24px;
     color: white;
     font-size: 0.938rem;
-    font-family: "GothamBook", sans-serif;
-
-}
+    font-family: "GothamBook", sans-serif;}
 .footerR>a>i{
     color: #ffffff;
-    padding: 10px;
-}
+    padding: 10px;}
 .cR>p>span{
-    color: #d21242;
-}
+    color: #d21242;}
 /* ============================== footer CopyRight VB ============================== */
 footer>.cR{
     background-color: #222222;
@@ -242,17 +201,15 @@ footer>.cR{
     justify-content: space-around;
     width: 100%;
     height: 15vh;
-    align-items: center;
-}
+    align-items: center;}
 .cR>p{
     font-size: 13px;
     line-height: 36px;
     color: #ffffff;
     font-weight: 400;
-    font-family: "Roboto", sans-serif;
-}
+    font-family: "Roboto", sans-serif;}
 
-/* ============================== Media 1024 VB ============================== */
+/* ============================== Media 1024px VB ============================== */
 @media screen and (max-width:1024px){
 /* ===================== Media 1024 (Section3) VB ===================== */
     .lineBottom>.line>.img1, .img2, .img3{
@@ -283,9 +240,8 @@ footer>.cR{
     .bgFooter>.footerR>p{
         width: 70%;
         font-size: 0.8rem;
-    }
-}
-/* ============================== Media 768 VB ============================== */
+    }}
+/* ============================== Media 768px VB ============================== */
 @media screen and (max-width:768px){
     /* ===================== Media 768 (Section 2) VB ===================== */
     .left>.leftP>p{
@@ -349,9 +305,8 @@ footer>.cR{
     }
     .bgFooter>.footerR>a{
         font-size: 0.8rem;
-    }
-}
-/* ============================== Media 425 VB ============================== */
+    }}
+/* ============================== Media 425px VB ============================== */
 @media screen and (max-width:425px){
     /* =========================== Sec 2 (425) VB =========================== */
     #sec2{
@@ -468,10 +423,9 @@ footer>.cR{
     .bgFooter>.footerR>p{
         line-height: 15px;
         text-align: center;
-    }
-    
-}
-@media screen and (max-width:375px){
+    }}
+    /* ============================== Media 390px VB ============================== */
+@media screen and (max-width:390px){
     /* =========================== Sec 2 (425) VB =========================== */
     .lineTop>.B{
         font-size: 10rem;
@@ -481,7 +435,7 @@ footer>.cR{
         font-size: 1.4rem;
     }
     .lineTop>h2{
-        font-size: 0.8rem;
+        font-size: 1rem;
         width: 90%;
     }
     .cR>p{
@@ -504,14 +458,19 @@ footer>.cR{
         line-height: 15px;
         text-align: center;
     }
+    .lineBottom>h3{
+        margin: 10px 10px;
+        width: 25vw;
+        font-size: 0.875rem;
+    }
     #sec3>.lineBottom>.line>p{
         line-height: 20px;
         width: 80%;
         font-size: 0.8rem;
         text-align: center;
-    }
-}
-@media screen and (max-width:320px){
+    }}
+/* ============================== Media 375px VB ============================== */
+@media screen and (max-width:375px){
     .lineTop>.B{
         font-size: 8rem;
     }
@@ -520,22 +479,20 @@ footer>.cR{
         font-size: 1.2rem;
     }
     .lineTop>h2{
-        font-size: 0.6rem;
+        font-size: 0.875rem;
     }
     .cR>p{
-        font-size: 11px;
+        font-size: 0.688rem;
         line-height: 25px;
     }
     .bgFooter>.footerR>a{
-        font-size: 0.2rem;
+        font-size: 0.4rem;
     }
     .bgFooter>.footerL>a{
-        font-size: 0.2rem;
+        font-size: 0.4rem;
     }
     #sec3>.lineBottom>.line>p{
         line-height: 18px;
         width: 80%;
         font-size: 0.6rem;
-    }
-
-}
+    }}
