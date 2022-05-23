@@ -311,13 +311,11 @@ header > div > a > i:hover {
     width: 60%;
     color: white;
     justify-content: flex-start;
-    line-height: 24px;
     font-size: 1.5vh;
     margin: 10px 0px;
     font-family: "GothamBook", sans-serif;}
 .left>.leftP>h3{
     color: white;
-    line-height: 36px;
     width: 60%;
     margin: 5px 0 20px 0;
     font-size: 4vh;
@@ -340,7 +338,6 @@ header > div > a > i:hover {
 .right>.rightP>p{
     width: 60%;
     justify-content: flex-start;
-    line-height: 24px;
     font-size: 1.5vh;
     margin: 10px 0px;
     font-family: "GothamBook", sans-serif;}
@@ -348,7 +345,6 @@ header > div > a > i:hover {
     width: 60%;
     margin: 5px 0 20px 0;
     font-size: 4vh;
-    line-height: 36px;
     font-family: "GothamBold", sans-serif;}
 .right>.rightImg{
     height: 50vh;
@@ -399,12 +395,10 @@ header > div > a > i:hover {
     color: #d21242;
     text-align: center;
     font-size: 1.125rem;
-    width: 100%;
-    line-height: 36px;}
+    width: 100%;}
 #sec3>.lineBottom p{
     color: #222222;
     font-size: 0.938rem;
-    line-height: 24px;
     text-align: center;
     width: 80%;}
 /* =========================== Line Bottom Img VB =========================== */
@@ -442,7 +436,6 @@ footer>.bgFooter{
     align-items: center;}
 .bgFooter>.footerL>p{
     width: 60%;
-    line-height: 24px;
     color: white;
     font-size: 0.938rem;
     font-family: "GothamBook", sans-serif;}
@@ -456,7 +449,6 @@ footer>.bgFooter{
     align-items: center;}
 .bgFooter>.footerR>p{
     width: 60%;
-    line-height: 24px;
     color: white;
     font-size: 0.938rem;
     font-family: "GothamBook", sans-serif;}
@@ -603,22 +595,16 @@ header > h1 {
   /* ===================== Media 768 (Section 2) VB ===================== */
   .left>.leftP>p{
     font-size: 1.8vh;
-    line-height: 17px;
     
 }
 .left>.leftP>h3{
-    padding-top: 10px;
-    font-size: 1.8vh;
-    line-height: 17px;
+    font-size: 2.1vh;
 }
 .right>.rightP>p{
     font-size: 1.8vh;
-    line-height: 17px;
 }
 .right>.rightP>h3{
-    font-size: 1.8vh;
-    padding-top: 10px;
-    line-height: 20px;
+    font-size: 2.1vh;
 }
 /*===================== Media 768 (Section 3)VB ===================== */
 .lineBottom>.line{
@@ -652,12 +638,10 @@ header > h1 {
 .bgFooter>.footerL>p{
     width: 80%;
     font-size: 0.7rem;
-    line-height: 15px;
 }
 .bgFooter>.footerR>p{
     width: 80%;
     font-size: 0.7rem;
-    line-height: 15px;
 }
 .bgFooter>.footerL>a > .fa-solid{
     font-size: 3.5rem;
@@ -667,7 +651,7 @@ header > h1 {
 }
 }
 /* ------------------------------------------responsive chris/tablette max-width 425px------------------------------------------------*/
-@media screen and (max-width: 425px) {   
+@media screen and (max-width: 500px) {   
 header > h1 {
     font-size: 2.8em;
 }
@@ -770,7 +754,6 @@ width: 70%;
     font-size: 1rem;
 }
 #sec3>.lineBottom>.line>p{
-    line-height: 20px;
     width: 70%;
     font-size: 0.8rem;
     text-align: center;
@@ -799,11 +782,9 @@ footer>.bgFooter{
     padding: 10px 0;
 }
 .bgFooter>.footerL>p{
-    line-height: 15px;
     text-align: center;
 }
 .bgFooter>.footerR>p{
-    line-height: 15px;
     text-align: center;
 }}
 /* ------------------------------------------responsive chris/tablette max-width 390px------------------------------------------------*/
@@ -843,11 +824,9 @@ footer>.bgFooter{
     padding: 10px 0;
 }
 .bgFooter>.footerL>p{
-    line-height: 15px;
     text-align: center;
 }
 .bgFooter>.footerR>p{
-    line-height: 15px;
     text-align: center;
 }
 .lineBottom>h3{
@@ -856,7 +835,6 @@ footer>.bgFooter{
     font-size: 0.875rem;
 }
 #sec3>.lineBottom>.line>p{
-    line-height: 20px;
     width: 80%;
     font-size: 0.8rem;
     text-align: center;
@@ -884,7 +862,6 @@ header > h1 {
 }
 .cR>p{
     font-size: 0.688rem;
-    line-height: 25px;
 }
 .bgFooter>.footerR>a{
     font-size: 0.4rem;
@@ -893,7 +870,6 @@ header > h1 {
     font-size: 0.4rem;
 }
 #sec3>.lineBottom>.line>p{
-    line-height: 18px;
     width: 80%;
     font-size: 0.6rem;
 }}
